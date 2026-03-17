@@ -4,7 +4,7 @@ schemaVersion = "0.0.1"
 
 [package]
 namespace = "adamant"
-name = "adamant-RTAMode"
+name = "RTAMode"
 versionNumber = "1.0.0"
 description = "Disables all combat pausing encounters for RTA runs."
 websiteUrl = "https://github.com/maybe-adamant/h2-pack-RTAMode"
