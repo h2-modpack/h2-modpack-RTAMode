@@ -7,7 +7,7 @@ namespace = "adamant"
 name = "RTAMode"
 versionNumber = "1.0.0"
 description = "Disables all combat pausing encounters for RTA runs."
-websiteUrl = "https://github.com/maybe-adamant/h2-pack-RTAMode"
+websiteUrl = "https://github.com/maybe-adamant/h2-modpack-RTAMode"
 containsNsfwContent = false
 
 [package.dependencies]
