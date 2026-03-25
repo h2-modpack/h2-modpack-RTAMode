@@ -27,7 +27,7 @@ public.definition = {
     tooltip  = "Disables all combat pausing encounters for RTA runs.",
     default  = false,
     dataMutation = false,
-    modpackModule = true,
+    modpack = "h2-modpack",
 }
 
 -- =============================================================================
