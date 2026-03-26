@@ -20,8 +20,8 @@ local _, revert = lib.createBackupSystem()
 -- =============================================================================
 
 public.definition = {
-    id       = "RTAMode",
-    name     = "RTA Mode",
+    id       = "SkipPausingEncounters",
+    name     = "Skip Pausing Encounters",
     category = "Run Modifiers",
     group    = "World & Combat Tweaks",
     tooltip  = "Disables all combat pausing encounters for RTA runs.",
@@ -52,7 +52,7 @@ end
 
 local function registerHooks()
     modutil.mod.Path.Wrap("ChooseEncounter", function(baseFunc, currentRun, room, args)
-        if not lib.isEnabled(config) then return baseFunc(currentRun, room, args) end
+        if not lib.isEnabled(config, public.definition.modpack) then return baseFunc(currentRun, room, args) end
         args = args or {}
         local source = args.LegalEncounters or room.LegalEncounters
         if source then
@@ -81,8 +81,8 @@ modutil.once_loaded.game(function()
     loader.load(function()
         import_as_fallback(rom.game)
         registerHooks()
-        if lib.isEnabled(config) then apply() end
-         if public.definition.dataMutation and not mods['adamant-Modpack_Core'] then
+        if lib.isEnabled(config, public.definition.modpack) then apply() end
+         if public.definition.dataMutation and not lib.isCoordinated(public.definition.modpack) then
             SetupRunData()
         end
     end)

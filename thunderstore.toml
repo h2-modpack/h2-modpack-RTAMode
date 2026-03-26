@@ -4,10 +4,10 @@ schemaVersion = "0.0.1"
 
 [package]
 namespace = "adamant"
-name = "RTAMode"
+name = "SkipPausingEncounters"
 versionNumber = "1.0.0"
 description = "Disables all combat pausing encounters for RTA runs."
-websiteUrl = "https://github.com/h2-modpack/h2-modpack-RTAMode"
+websiteUrl = "https://github.com/h2-modpack/h2-modpack-SkipPausingEncounters"
 containsNsfwContent = false
 
 [package.dependencies]

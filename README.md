@@ -1,4 +1,4 @@
-# RTA Mode
+# Skip Pausing Encounters
 
 > Disables in-game events that pause the run timer, ensuring a clean Real-Time Attack (RTA) speedrun.
 
